@@ -15,5 +15,7 @@ func main() {
 		_, _ = fmt.Fprintf(w, "姓名：%s，\n性别：%s，\n年龄 %d!", viper.GetString("resume.name"), conf.Resume.Sex, conf.Resume.Age) //这个写入到w的是输出到客户端的
 	})
 	log.Fatal(http.ListenAndServe(":8081", nil))
+
+	// 这是在远程新增的部分
 }
 
